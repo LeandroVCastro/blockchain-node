@@ -94,7 +94,7 @@ class Blockchain{
 
 // Inicia a blockchain
 // Ao iniciar a blockchain, o bloco gênesis é criado automaticamente(método constructor)
-let savjeeCoin = new Blockchain();
+let myChain = new Blockchain();
 var isDead = false;
 var indexBlockchain = 1;
 
@@ -102,6 +102,6 @@ var indexBlockchain = 1;
 while(!isDead){
 	console.log("");
 	console.log("mining block " + indexBlockchain + "...");
-	savjeeCoin.addBlock(new Block(indexBlockchain, new Date(), {amount: Math.random() * 100000}));
+	myChain.addBlock(new Block(indexBlockchain, new Date(), {amount: Math.random() * 100000}));
 	indexBlockchain++;
 }
