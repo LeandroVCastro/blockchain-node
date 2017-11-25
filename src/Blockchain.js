@@ -60,7 +60,7 @@ class Blockchain {
   /**
    * Percorre a Blockchain verificando a integridade dos blocos.
    *
-   * @return {bool}
+   * @return {Boolean}
    */
   isChainValid () {
     for (let i = 1; i < this.chain.length; i++) {
