@@ -1,16 +1,17 @@
 const Block      = require('./src/Block');
 const Blockchain = require('./src/Blockchain');
 
-// Inicia a blockchain
-// Ao iniciar a blockchain, o bloco gênesis é criado automaticamente(método constructor)
+/**
+ * Inicia a blockchain.
+ * Ao usar Blockchain.create() o bloco gênesis é criado automaticamente.
+ */
 const myChain = new Blockchain();
-var isDead = false;
-var indexBlockchain = 1;
+const dead = false;
+const chainIndex = 1;
 
 // Roda a aplicação
-while(!isDead){
-  console.log("");
-  console.log("mining block " + indexBlockchain + "...");
-  myChain.addBlock(new Block(indexBlockchain, new Date(), {amount: Math.random() * 100000}));
-  indexBlockchain++;
+while(!dead) {
+  console.log(`\n mining block ${chainIndex} ...`);
+  myChain.addBlock(new Block(chainIndex, new Date(), { amount: Math.random() * 100000 }));
+  chainIndex++;
 }
