@@ -6,7 +6,7 @@ const Blockchain = require('./src/Blockchain');
  * Ao usar Blockchain.create() o bloco gênesis é criado automaticamente.
  */
 const myChain = Blockchain.create();
-const dead = false;
+let dead = false;
 let chainIndex = 1;
 
 // Roda a aplicação
