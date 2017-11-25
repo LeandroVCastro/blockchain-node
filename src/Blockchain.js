@@ -9,7 +9,6 @@ class Blockchain {
    * @return {void}
    */
   constructor (difficulty = 4) {
-    this.chain = [this.createGenesisBlock()];
     this.difficulty = difficulty;
   }
 
@@ -20,7 +19,7 @@ class Blockchain {
    */
   static create () {
     const instance = new Blockchain();
-    instance.chain = instance.createGenesisBlock();
+    instance.chain = [instance.createGenesisBlock()];
 
     return instance;
   }
