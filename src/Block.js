@@ -11,7 +11,7 @@ class Block {
    * @param {String} previousHash
    * @return {void}
    */
-  constructor(index, timestamp, data, previousHash = ''){
+  constructor (index, timestamp, data, previousHash = '') {
     this.index = index;
     this.timestamp = timestamp;
     this.data = data;
@@ -25,7 +25,7 @@ class Block {
    *
    * @return {String}
    */
-  calculateHash(){
+  calculateHash () {
     return SHA256(this.index + this.previousHash + this.timestamp + JSON.stringify(this.data) + this.nonce).toString();
   }
 
