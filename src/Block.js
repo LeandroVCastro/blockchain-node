@@ -44,7 +44,7 @@ class Block {
       this.hash = this.calculateHash();
     }
 
-    console.log(`Block mined: ${this.hash}`, `\n Nonce: ${this.nonce}`);
+    console.log(`Block mined: ${this.hash}`, `\nNonce: ${this.nonce}`);
 
     return this;
   }
@@ -69,3 +69,5 @@ class Block {
     return this.previousHash === block.hash;
   }
 }
+
+module.exports = Block;

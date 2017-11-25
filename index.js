@@ -7,11 +7,11 @@ const Blockchain = require('./src/Blockchain');
  */
 const myChain = new Blockchain();
 const dead = false;
-const chainIndex = 1;
+let chainIndex = 1;
 
 // Roda a aplicação
-while(!dead) {
-  console.log(`\n mining block ${chainIndex} ...`);
+while (!dead) {
+  console.log(`\nMining block ${chainIndex} ...`);
   myChain.addBlock(new Block(chainIndex, new Date(), { amount: Math.random() * 100000 }));
   chainIndex++;
 }
