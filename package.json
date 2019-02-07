@@ -1,0 +1,30 @@
+{
+  "name": "blockchain-node",
+  "version": "1.0.0",
+  "description": "abstração do conceito de blockchain implementado em nodejs",
+  "main": "main.js",
+  "dependencies": {
+    "crypto-js": "^3.1.9-1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeandroVCastro/blockchain-node.git"
+  },
+  "keywords": [
+    "blockchain",
+    "nodejs",
+    "crypto"
+  ],
+  "author": "Leandro Vieira de Castro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeandroVCastro/blockchain-node/issues"
+  },
+  "homepage": "https://github.com/LeandroVCastro/blockchain-node#readme"
+}
